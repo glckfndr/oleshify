@@ -19,45 +19,47 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body style="padding: 5rem">
-    <!-- Collapsible -->
-    <div class="collapsible collapsible--expanded">
-      <header class="collapsible__header">
-        <h2 class="collapsible__heading">Item 1</h2>
-
-        <svg class="icon icon--primary icon--white collapsible__chevron">
-          <use xlink:href="images/sprite.svg#chevron"></use>
-        </svg>
-      </header>
-      <div class="collapsible__content">
+  <body>
+    <!-- Block -->
+    <section class="block container">
+      <div class="block__header">
+        <h2 class="block__heading">Heading</h2>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
-          reiciendis doloribus illo quidem alias. Eos nihil voluptatem ad fugit
-          reiciendis enim officia itaque impedit debitis, modi totam illum eaque
-          quos.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex tempore
+          voluptatibus cupiditate harum minus. Sapiente delectus ipsa neque est
+          omnis. Nobis obcaecati nihil saepe aliquid, temporibus fugiat sint non
+          repellat?
         </p>
       </div>
-    </div>
-    <!-- End Collapsible -->
-    <!-- Collapsible -->
-    <div class="collapsible collapsible--expanded">
-      <header class="collapsible__header">
-        <h2 class="collapsible__heading">Item 2</h2>
-
-        <svg class="icon icon--primary icon--white collapsible__chevron">
-          <use xlink:href="images/sprite.svg#chevron"></use>
-        </svg>
-      </header>
-      <div class="collapsible__content">
+      <!-- Card -->
+      <div style="width: 30%; margin: 20px">
+        <div class="card card--primary">
+          <div class="card__header">Title</div>
+          <div class="card__body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            amet accusamus delectus nobis optio. Quaerat rerum accusantium,
+            autem officiis ea doloremque iusto maxime, commodi obcaecati maiores
+            laborum minus, hic numquam!
+          </div>
+        </div>
+      </div>
+      <!-- End Card -->
+    </section>
+    <!-- End Block -->
+    <!-- Block -->
+    <section class="block block--dark block--skewed-left">
+      <div class="container">
+        <h2 class="block__heading">Heading</h2>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
-          reiciendis doloribus illo quidem alias. Eos nihil voluptatem ad fugit
-          reiciendis enim officia itaque impedit debitis, modi totam illum eaque
-          quos.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex tempore
+          voluptatibus cupiditate harum minus. Sapiente delectus ipsa neque est
+          omnis. Nobis obcaecati nihil saepe aliquid, temporibus fugiat sint non
+          repellat?
         </p>
       </div>
-    </div>
-    <!-- End Collapsible -->
+    </section>
+    <!-- End Block -->
+
     <script>
       const collapsibles = document.querySelectorAll(".collapsible");
       collapsibles.forEach((item) =>
