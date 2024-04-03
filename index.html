@@ -20,42 +20,80 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- Block Domain -->
-    <section class="block container block-domain">
-      <header class="block__header">
-        <h2>Starting at $9 per month</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum harum
-          iusto vero aperiam sit quam error sint nobis impedit!
-        </p>
-      </header>
-      <!-- Input Group -->
-      <div class="input-group">
-        <input
-          class="input"
-          type="text"
-          name="text"
-          id="text"
-          placeholder="Enter domain name here ..."
-        />
-        <button class="btn btn--accent">
-          <svg class="icon">
-            <use xlink:href="images/sprite.svg#search"></use>
-          </svg>
-          Search
-        </button>
+    <!-- Plan Block -->
+    <div class="block container block-plans">
+      <div class="grid grid--1x3">
+        <!-- Start Plan -->
+        <div class="plan">
+          <div class="card card--secondary">
+            <div class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% OFF</span>
+              <span class="plan__description">Easy start on the cloud</span>
+            </div>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Unlimited Websites</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">100 GB SSD Storage</li>
+                <li class="list__item">3 GB RAM</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- End Plan -->
+        <!-- Start Popular Plan -->
+        <div class="plan plan--popular">
+          <div class="card card--primary">
+            <div class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--primary badge--small">10% OFF</span>
+              <span class="plan__description">Easy start on the cloud</span>
+            </div>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Unlimited Websites</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">100 GB SSD Storage</li>
+                <li class="list__item">3 GB RAM</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- End Plan -->
+        <!-- Start Plan -->
+        <div class="plan">
+          <div class="card card--secondary">
+            <div class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% OFF</span>
+              <span class="plan__description">Easy start on the cloud</span>
+            </div>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Unlimited Websites</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">100 GB SSD Storage</li>
+                <li class="list__item">3 GB RAM</li>
+              </ul>
+              <button class="btn btn--outline btn--block">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- End Plan -->
       </div>
-      <!-- End Input Group -->
-      <ul class="list block-domain__prices">
-        <li><span class="badge badge--secondary">.com 6$</span></li>
-        <li>.sg 10$</li>
-        <li>.space 11$</li>
-        <li>.info 14$</li>
-        <li>.net 10$</li>
-        <li>.xyz 10$</li>
-      </ul>
-    </section>
-    <!--End Block Domain -->
+    </div>
+    <!-- End Plan Block -->
+
     <script>
       const collapsibles = document.querySelectorAll(".collapsible");
       collapsibles.forEach((item) =>

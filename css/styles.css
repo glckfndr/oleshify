@@ -217,6 +217,11 @@ a {
   color: white;
 }
 
+.btn--heading {
+  background-color: var(--color-heading);
+  color: white;
+}
+
 .btn--secondary:hover {
   background-color: #00c7ee;
 }
@@ -322,6 +327,10 @@ a {
   color: white;
 }
 
+.card--primary .badge--primary {
+  background-color: #126de4;
+}
+
 .card--secondary .badge--secondary {
   background-color: #02cdf1;
 }
@@ -360,7 +369,7 @@ a {
   position: relative;
 }
 
-.plan .card__header::before {
+.plan--popular .card__header::before {
   content: url("../images/popular.svg");
   display: inline-block;
   width: 40px;
@@ -721,4 +730,30 @@ a {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   }
+}
+
+/* Plans Block */
+.plan {
+  transition: transform 0.2s ease-out;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan--popular:hover {
+  transform: scale(1.15);
+}
+
+.plan--popular {
+  transform: scale(1.1);
+}
+
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
