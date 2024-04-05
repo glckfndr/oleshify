@@ -364,6 +364,7 @@ a {
   font-size: 2rem;
   font-weight: 300;
   letter-spacing: 1px;
+  display: block;
 }
 
 .plan .list__item {
@@ -484,8 +485,13 @@ a {
 
 /* Testimonials */
 
+.testimonial-block {
+  margin-bottom: 9rem;
+}
+
 .testimonial {
   padding: 3rem;
+  margin-bottom: 13rem;
 }
 
 .testimonial__image {
@@ -515,23 +521,29 @@ a {
 }
 
 /* Callouts */
+.block-callout {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
 
 .callout {
   padding: 4rem;
+
+  margin: -7rem auto;
+  position: absolute;
+  top: -10rem;
 }
 .callout--primary {
-  border-radius: 4px;
+  border-radius: 7px;
   background-color: var(--color-primary);
   color: white;
-}
-
-.callout__content {
 }
 
 .callout__heading {
   color: white;
   margin-top: 0;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .callout .btn {
@@ -541,11 +553,13 @@ a {
 
 .callout__content {
   text-align: center;
+  font-size: 2.4rem;
 }
 
 @media screen and (min-width: 768px) {
   .callout__content {
     text-align: left;
+    font-size: 2rem;
   }
 
   .callout .btn {
@@ -554,6 +568,13 @@ a {
   }
   .callout .grid--1x2 {
     grid-template-columns: 1fr auto;
+  }
+  .callout {
+    margin-top: 0;
+  }
+
+  .block-callout {
+    max-width: 98rem;
   }
 }
 /* Collapsibles */
@@ -813,8 +834,16 @@ a {
 }
 
 /* Footer */
+
 .footer {
   background-color: #232323;
+  padding-top: 20rem;
+}
+
+.footer__sections {
+  overflow: visible;
+  white-space: nowrap;
+  padding-top: 10rem;
 }
 
 .footer__section {
@@ -827,7 +856,7 @@ a {
 }
 
 .footer__heading {
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -856,13 +885,9 @@ a {
   color: white;
 }
 
-/* .footer__section .list {
-  margin: 0;
-} */
-
 @media screen and (min-width: 768px) {
   .footer__sections {
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   }
 
   .footer__brand {
