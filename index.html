@@ -17,12 +17,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <!-- NavBar -->
-      <nav class="nav collapsible">
+      <nav class="nav collapsible" data-aos="slide-left">
         <a class="nav__brand" href="/"><img src="images/logo.svg" alt="" /></a>
         <svg class="icon icon--white nav__toggler">
           <use xlink:href="images/sprite.svg#menu"></use>
@@ -40,7 +42,7 @@
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--1x2">
         <!-- First Column -->
-        <header class="block__header hero__content">
+        <header class="block__header hero__content" data-aos="fade">
           <h1 class="block__heading">Cloud Hosting for Proc</h1>
           <p class="hero__tagline">
             Deploy your websites in less than 60 seconds
@@ -49,7 +51,7 @@
         </header>
         <!-- End First Column -->
         <!-- Second Column -->
-        <picture>
+        <picture data-aos="fade-left">
           <source
             type="image/webp"
             srcset="images/banner.webp 1x, images/banner@2x.webp 2x" />
@@ -100,7 +102,7 @@
     </section>
     <!--End Block Domain -->
     <!-- Plans Block -->
-    <div class="block container block-plans">
+    <div class="block container block-plans" data-aos="fade-down">
       <div class="grid grid--1x3">
         <!-- Start Plan -->
         <div class="plan">
@@ -184,7 +186,7 @@
       </header>
       <!-- Feature -->
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#easy"></use>
@@ -199,7 +201,7 @@
           </p>
           <a class="link-arrow" href="http://">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-left">
           <source
             type="image/webp"
             srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
@@ -385,7 +387,7 @@
 
     <!--  Testimonials Block-->
     <section class="block testimonial-block">
-      <header class="block__header">
+      <header class="block__header" data-aos="zoom-in-up">
         <h2>What our customers are saying</h2>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
@@ -553,6 +555,10 @@
           this.classList.toggle("collapsible--expanded");
         })
       );
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
