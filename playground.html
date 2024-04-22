@@ -18,23 +18,48 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      body {
+        width: 100vw;
+      }
+
+      .block {
+        margin: 5rem auto;
+        width: 40rem;
+        height: 40rem;
+        padding: 0;
+        position: relative;
+        outline: 1px solid gray;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        outline: 1px solid red;
+        overflow: hidden;
+        border-radius: 3rem;
+      }
+
+      .box {
+        width: 100%;
+        height: 20rem;
+        outline: 1px solid red;
+        background-color: aqua;
+      }
+      .box::before {
+        content: url(./images/popular.svg);
+        display: inline-block;
+        width: 40px;
+        position: absolute;
+        top: -6px;
+        right: 5%;
+      }
+    </style>
   </head>
   <body>
-    <!-- Callouts -->
-    <div class="callout callout--primary">
-      <div class="grid grid--1x2">
-        <div class="callout__content">
-          <h2 class="callout__heading">Ready to get started?</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae qui
-            sequi ducimus accusantium iusto ut et veniam porro reprehenderit
-            cumque assumenda fugiat quasi deserunt culpa inventore dignissimos,
-            libero delectus veritatis.
-          </p>
-        </div>
-        <a href="#" class="btn btn--secondary btn--stretched">Get started</a>
+    <div class="block">
+      <div class="container">
+        <div class="box"></div>
       </div>
     </div>
-    <!-- End Callouts -->
   </body>
 </html>
